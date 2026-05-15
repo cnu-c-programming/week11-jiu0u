@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int cmp_asc(const void * a, const void * b) {
-    return *(int*)a - *(int*)b;
+int cmp_asc(const int * a, const int * b) {
+    return *a - *b;
 }
 
-int cmp_desc(const void* a, const void* b) {
-    return *(int*)b - *(int*)a;
+int cmp_desc(const int * a, const int * b) {
+    return *b - *a;
 }
 
 
